@@ -2,14 +2,15 @@ import React from "react";
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md">
+    <div className="relative bg-white rounded-lg overflow-hidden">
       <img
         src={product.image}
         alt={product.name}
-        className="w-full h-48 object-cover rounded-t-lg"
+        className="w-full h-full object-cover"
       />
-      <h2 className="text-xl font-semibold mt-4">{product.name}</h2>
-      <p className="text-gray-600">{product.price}</p>
+      <div className="absolute bottom-4 left-1/4 transform -translate-x-1/2  bg-white text-black px-4 py-2 text-center inline-block rounded-sm">
+        <p className="text-xs font-bold">{product.type}</p>
+      </div>
     </div>
   );
 };

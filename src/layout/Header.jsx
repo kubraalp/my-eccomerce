@@ -20,35 +20,32 @@ const Header = () => {
       </div>
 
       <nav className="mt-8 flex flex-col items-center space-y-4 text-gray-600">
-        <NavLink
+        <NavLink exact
           to="/"
-          className={({ isActive }) =>
-            isActive ? "text-lg font-normal" : "text-lg font-bold"
-          }
+           activeClassName="text-lg font-normal"
+          className="text-lg font-bold"
         >
           Home
         </NavLink>
         <NavLink
           to="/ProductPage"
-          className={({ isActive }) =>
-            isActive ? "text-lg font-normal" : "text-lg font-bold"
-          }
+           activeClassName="text-lg font-normal"
+          className="text-lg font-bold"
         >
           Product
         </NavLink>
         <NavLink
           to="/PricingPage"
-          className={({ isActive }) =>
-            isActive ? "text-lg font-normal" : "text-lg font-bold"
-          }
+          activeClassName="text-lg font-normal"
+          className="text-lg font-bold"
         >
           Pricing
         </NavLink>
         <NavLink
           to="/ContactPage"
-          className={({ isActive }) =>
-            isActive ? "text-lg font-normal" : "text-lg font-bold"
-          }
+           activeClassName="text-lg font-normal"
+          className="text-lg font-bold"
+          
         >
           Contact
         </NavLink>
